@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="playlist2.html"></a>
+    <a href="playlist3.html"></a>
+    <title>Playlist</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #47b49b;
+            color: white;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            background-color: #333;
+            padding: 10px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1em;
+        }
+        .navbar a:hover {
+            background-color: #575757;
+            border-radius: 5px;
+        }
+        .header {
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+        .header h1 {
+            font-size: 3em;
+        }
+        .header input {
+            width: 50%;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 1em;
+        }
+        .moods {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+        .mood {
+            background-color: black;
+            width: 200px;
+            height: 150px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5em;
+            position: relative;
+            cursor: pointer;
+        }
+        .mood img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0.5;
+        }
+        .mood span {
+            position: absolute;
+        }
+        .featured {
+            margin-top: 50px;
+        }
+        .featured img {
+            margin: 0 10px;
+        }
+        img {
+            width: 15%;
+        }
+        p {
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="">Home</a>
+        <a href="" id="playlists-link">My Playlists</a>
+        <a href="playlist3.html" id="singing-link">Singing</a>
+        <a href="playlist2.html" id="login-link">Login</a>
+    </div>
+    <div class="container">
+        <div class="header">
+            <h1>Get Playlists for You. Discover!</h1>
+            <p>Type your favourite songs and create your perfect playlist!</p>
+            <input type="text" placeholder="Search for a song to create a playlist">
+        </div>
+
+        <div class="moods">
+            <div class="mood" data-link="https://open.spotify.com/artist/2YZyLoL8N0Wb9xBt1NhZWg">
+                <img src="rap.jpg" alt="Rap">
+                <span>Rap</span>
+            </div>
+            <div class="mood" data-link="https://open.spotify.com/genre/0JQ5DAqbMKFQ00XGBls6ym">
+                <img src="hiphop.jpg" alt="Hip Hop">
+                <span>Hip Hop</span>
+            </div>
+            <div class="mood" data-link="https://open.spotify.com/track/72TFWvU3wUYdUuxejTTIzt">
+                <img src="work.jpg" alt="Work">
+                <span>Work</span>
+            </div>
+            <div class="mood" data-link="https://open.spotify.com/genre/0JQ5DAqbMKFA6SOHvT3gck">
+                <img src="party.jfif" alt="Party">
+                <span>Party</span>
+            </div>
+        </div>
+
+        <div class="featured">
+            <p>Featured Playlists</p>
+            <p>There're comunity playlists</p>
+            <img src="Luka.jpg" alt="Luka's">
+            <img src="tazo.jpg" alt="Tazo's Ponks">
+            <img src="matejpg.jpg" alt="Mate's">
+            <img src="barbare.jpg" alt="Barbare's">
+        </div>
+    </div>
+
+    
+</body>
+</html>

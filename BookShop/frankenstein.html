@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Little Prince</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            background-color: #D1BEAF;
+        }
+        header {
+            background-color: #796751;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+        nav a {
+            text-decoration: none;
+            color: white;
+        }
+        .book-info {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        .book-cover {
+            flex: 1;
+            max-width: 300px;
+            margin-bottom: 20px;
+        }
+        .book-details {
+            flex: 2;
+            padding: 0 20px;
+        }
+        .book-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin-left: 20px;
+        }
+        .author {
+            font-size: 16px;
+            color: #83717B;
+            margin-left: 20px;
+        }
+        .price {
+            font-size: 18px;
+            color: #797561;
+            margin-left: 20px;
+        }
+        .description {
+            font-size: 14px;
+            color: #6E6965;
+            margin-left: 20px;
+        }
+        .buttons {
+            margin-top: 20px;
+        }
+        .button {
+            background-color: #838383;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-left: 20px;
+        }
+        .button.buy-now {
+            background-color: #83717B;
+        }
+        .product-details {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #595441;
+            margin-left: 20px;
+        }
+        .ratings {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+            margin-left: 20px;
+        }
+        .star {
+            color: #FFD700;
+            margin-right: 5px;
+        }
+        .reviews {
+            color: #989491;
+            margin-left: 5px;
+        }
+        footer {
+            background-color: #6E6965;
+            color: blueviolet;
+            text-align: center;
+            padding: 20px;
+            margin-top: auto;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            .book-info {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .book-cover, .book-details {
+                width: 100%;
+                max-width: none;
+                padding: 0;
+                margin-left: 0;
+                margin-right: 0;
+            }
+            .book-title, .author, .price, .description, .product-details, .ratings {
+                margin-left: 0;
+            }
+            .buttons {
+                justify-content: center;
+                width: 100%;
+                margin-top: 10px;
+                display: flex;
+                gap: 10px;
+            }
+            .button {
+                margin-left: 0;
+            }
+        }
+        @media (max-width: 480px) {
+            nav {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            .buttons {
+                flex-direction: column;
+            }
+            .button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>BOOKSHOP</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Browse</a>
+            <a href="#">About Us</a>
+            <a href="#">Authors</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    </header>
+    <div class="book-info">
+        <div class="book-cover">
+            <img src="image/frankenstein-9781982146160_hr.jpg" alt="The Little Prince" width="100%">
+        </div>
+        <div class="book-details">
+            <div class="book-title">Frankenstein</div>
+            <div class="author">damezara naxva</div>
+            <div class="price">$18.99</div>
+            <div class="description">
+                <p>une Messiah, Children of Dune, God Emperor of Dune, Heretics of Dune, Chapterhouse: Dune</p>
+                <p>Set in a distant future on the desert planet Arrakis,</p>
+                <p>the novel follows young Paul Atreides as he becomes embroiled in a struggle for control over the planet’s valuable spice, melange. Themes of politics, religion, and ecology are central to the story.</p>
+            </div>
+            <div class="buttons">
+                <button class="button">Add to Cart</button>
+                <button class="button buy-now">Buy Now</button>
+            </div>
+            <div class="product-details">
+                <p>Publisher: Penguin Random House</p>
+                <p>ISBN: 9780156012195</p>
+                <p>Pages: 96</p>
+            </div>
+            <div class="ratings">
+                <span class="star">⭐⭐⭐⭐⭐</span>
+                <span class="reviews">830 reviews</span>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <nav>
+            <a href="#">Navigation</a>
+            <a href="#">Customer Service</a>
+            <a href="#">About Us</a>
+        </nav>
+    </footer>
+</body>
+</html>

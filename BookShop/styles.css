@@ -1,0 +1,233 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeae9;
+    color: #333;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    background-color: #796751;
+    color: white;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .logo h1 {
+    margin: 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1rem;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header .search-cart {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header .search-cart input[type="text"] {
+    padding: 0.5rem;
+    margin-right: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+header .cart-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+main {
+    flex: 1;
+}
+
+.banner {
+    background-color: #d1beaf;
+    padding: 2rem 0;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+.banner .banner-text h2 {
+    margin: 0 0 1rem 0;
+}
+
+.banner .banner-text button {
+    background-color: #796751;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.banner .banner-text button:hover {
+    background-color: #59544f;
+}
+
+.genres, .best-sellers, .offers, .author-collections {
+    padding: 2rem;
+    text-align: center;
+}
+
+.genres h2, .best-sellers h2, .author-collections h2 {
+    color: #796751;
+}
+
+.genre-list, .book-list, .collection-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.genre, .book, .collection, .offer {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    width: 200px;
+    text-align: center;
+}
+
+.genre img, .book img, .offer img, .collection img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+}
+
+.book h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+    color: #796751;
+}
+
+.book p {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    color: #333;
+}
+
+.book .add-to-cart {
+    background-color: #796751;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.book .add-to-cart:hover {
+    background-color: #59544f;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+
+.offers {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer {
+    flex-basis: calc(50% - 10px);
+    margin-bottom: 20px;
+}
+
+.offer img {
+    width: 100%;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .offer {
+        flex-basis: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .genre-list, .book-list, .collection-list {
+        flex-direction: column;
+    }
+
+    .offer {
+        flex-basis: calc(100% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header .search-cart {
+        margin-top: 1rem;
+        width: 100%;
+    }
+
+    header .search-cart input[type="text"] {
+        flex-grow: 1;
+        margin-right: 0;
+        margin-bottom: 0.5rem;
+    }
+
+    header .cart-icon {
+        font-size: 1.25rem;
+    }
+
+    .genre-list, .book-list, .collection-list {
+        flex-direction: column;
+    }
+
+    .offer {
+        flex-basis: calc(100% - 10px);
+    }
+}
