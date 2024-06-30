@@ -1,16 +1,14 @@
-/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: url('/7-gradient-background-animation-CSS.avif') no-repeat center center fixed;
+    background: url('') no-repeat center center fixed;
     background-size: cover;
     color: #333;
     overflow-x: hidden;
 }
 
-/* Header */
 header {
     background: rgba(30, 144, 255, 0.8);
     color: white;
@@ -27,7 +25,6 @@ header h1 {
     animation: fadeIn 2s ease-in-out;
 }
 
-/* Navigation */
 nav {
     background: rgba(68, 68, 68, 0.8);
     color: white;

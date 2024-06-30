@@ -1,0 +1,131 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bookshop - The Little Prince</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo">BOOKSHOP</div>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="icons">
+                    <a href="#"><img src="/search-icon-2048x2048-cmujl7en.png" alt="Search"></a>
+                    <a href="#"><img src="/shoppincart.jpg" alt="Cart"></a>
+                    <a href="#"><img src="/humanicon.jpg" alt="User"></a>
+                </div>
+                <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+            </div>
+        </header>
+        
+        <main>
+            <section class="section-1">
+                <div class="book-details">
+                    <div class="book-cover">
+                        <img src="/41xaAcosNML.jpg" alt="The Little Prince">
+                    </div>
+                    <div class="book-info">
+                        <h1>The Little Prince</h1>
+                        <h2>Antoine de Saint-Exupéry</h2>
+                        <p class="price">$12.99</p>
+                        <p class="description">
+                            The Little Prince by Antoine de Saint-Exupéry is a timeless classic that tells the story of a young prince who travels from planet to planet, learning valuable life lessons along the way. It is a poignant tale that explores the importance of human connections and the beauty of innocence.
+                            <br><br>
+                            Few stories are as widely read and as universally cherished by children and adults alike as The Little Prince, presented here in a stunning new translation with carefully restored artwork. The Little Prince is a novella written and illustrated by French writer, and military pilot, Antoine de Saint-Exupéry.
+                        </p>
+                        <div class="reviews">
+                            <span>★★★★☆ (492 Reviews)</span>
+                            <div class="quantity">
+                                <button>-</button>
+                                <span>1</span>
+                                <button>+</button>
+                            </div>
+                        </div>
+                        <button class="buy-now">Buy Now</button>
+                        <button class="cart">Add to Cart</button>
+                    </div>
+                </div>
+            </section>
+            <section class="section-2">
+                <div class="product-details">
+                    <h3>Product Details</h3>
+                    <ul>
+                        <li><strong>Publisher:</strong> Penguin Random House</li>
+                        <li><strong>Publication Date:</strong> 13 April, 2023</li>
+                        <li><strong>Binding:</strong> Paperback</li>
+                        <li><strong>Pages:</strong> 96</li>
+                        <li><strong>Age:</strong> 8-12 Year Old</li>
+                        <li><strong>Dimensions:</strong> 130 x 197 x 18 mm</li>
+                        <li><strong>ISBN:</strong> 9780241560303</li>
+                    </ul>
+                </div>
+                <div class="author-details">
+                    <h3>Antoine de Saint-Exupéry</h3>
+                    <p>
+                        Born in Lyon, France, in 1900, Antoine de Saint-Exupéry considered himself a pilot above all else. For twenty years, he flew everything from cartography missions to commercial flights, and flying occupied a significant place in his philosophical essays and literary writings. The theme of aviation was often Saint-Exupéry’s launching point for more abstract discussions on issues like the search for wisdom and the meaning of life.
+                    </p>
+                    <button>See More</button>
+                </div>
+            </section>
+            <section class="section-3">
+                <h3>You May Also Like</h3>
+                <div class="related-items">
+                    <div class="related-item">
+                        <img src="book1.png" alt="Book 1">
+                        <p>$11.99</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="book2.png" alt="Book 2">
+                        <p>$10.99</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="book3.png" alt="Book 3">
+                        <p>$12.50</p>
+                    </div>
+                    <div class="related-item">
+                        <img src="book4.png" alt="Book 4">
+                        <p>$9.99</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="footer-container">
+                <div class="contact">
+                    <p><strong>Contact Us</strong></p>
+                    <p><img src="/phoneiccon.jpg" width="25px" alt="Phone"> +1 (908) 774-0731</p>
+                    <p><img src="/emailicon.jpg" alt="Email" width="25px"> info@sample.com</p>
+                    <p><img src="/address-81.png" alt="Address" width="25px"> 34 Catherine Street, Lindenhurst, NY</p>
+                </div>
+                <div class="social">
+                    <a href="#"><img src="/06-facebook-512.webp" alt="Facebook"></a>
+                    <a href="#"><img src="/xlggo.webp" alt="Twitter"></a>
+                    <a href="#"><img src="/123739.png" alt="Instagram"></a>
+                    <a href="#"><img src="/youtube-icon.webp" alt="YouTube"></a>
+                </div>
+                <div class="navigation">
+                    <ul>
+                        <li><a href="#">Shop Books</a></li>
+                        <li><a href="#">About Authors</a></li>
+                        <li><a href="#">About Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+                const nav = document.querySelector('header nav');
+                nav.classList.toggle('show');
+            }
+        </script>
+    </body>
+    </html>
