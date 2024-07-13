@@ -135,10 +135,10 @@ header nav ul li a {
 }
 
 header nav ul li a:hover {
-    background-color: rgba(255, 255, 255, 0.1);
+    background-color: #796751;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 768px) {S
     /* Adjustments for smaller screens */
     header {
         padding: 16px 20px; /* Adjusted padding for smaller screens */
