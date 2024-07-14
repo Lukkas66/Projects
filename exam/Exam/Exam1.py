@@ -55,12 +55,14 @@ def smaller(arr):
     return result
 
 #3. Anagram Detection
-
-
-
-
-
-
+def is_anagram(test, original):
+    test = test.lower()
+    original = original.lower()
+    
+    sorted_test = sorted(test)
+    sorted_original = sorted(original)
+    
+    return sorted_test == sorted_original
 
 #6kyu
 
@@ -103,6 +105,9 @@ def luck_check(ticket):
         right_sum = sum(int(digit) for digit in ticket[half_n+1:])
     
     return left_sum == right_sum
+
+
+#პირველი გამოცდა იყო ჩემი და იმედია სწორედ ავტვირთე ყველაფერი : ))
 
 
 
