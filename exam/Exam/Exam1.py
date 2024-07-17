@@ -66,7 +66,6 @@ def sum_nested_numbers(arr, depth=1):
 #1.luck check
 
 def luck_check(ticket):
-    # Ensure the input is a non-empty string representing a decimal number
     if not isinstance(ticket, str) or not ticket.isdigit():
         raise ValueError("Input should be a non-empty string representing a decimal number")
 
