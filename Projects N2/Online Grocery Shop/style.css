@@ -1,0 +1,176 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #333;
+    background-image: url('images/background.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+header {
+    background-color: #1e272e; /* Changed color */
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #fdcb6e;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px 0;
+    background: url('path/to/your/hero-image.jpg') no-repeat center center;
+    background-size: cover;
+    color: white;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.cta-button {
+    display: inline-block;
+    background: #fdcb6e;
+    color: #2d3436;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 20px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #fab1a0;
+}
+
+.filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.filters h3 {
+    margin: 0;
+}
+
+.filter-options select {
+    padding: 5px;
+    margin-left: 10px;
+}
+
+.products {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.product img {
+    max-width: 150px;
+    border-radius: 5px;
+    margin-right: 15px;
+}
+
+.product h3 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+}
+
+.product p {
+    margin: 5px 0;
+}
+
+.product .price {
+    color: #00b894;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.product .add-to-cart {
+    background-color: #00b894;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+.product-details {
+    flex: 1;
+}
+
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.cart ul {
+    list-style: none;
+    padding: 0;
+}
+
+.cart ul li {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #1e272e; /* Changed color */
+    color: white;
+    margin-top: 20px;
+}
